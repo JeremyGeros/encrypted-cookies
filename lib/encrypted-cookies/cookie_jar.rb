@@ -16,7 +16,7 @@ module EncryptedCookies
     #     cookies.encrypted[:encrypted_cookie] # => "you don't know what this says"
     #     cookies.encrypted[:encrypted_permanent] # => "you don't know what this says, but it will be here for 20 years"
     def encrypted
-      @encrypted ||= EncryptedCookieJar.new(self, @secret)
+      @encrypted ||= EncryptedCookieJar.new(self, @secret || @options[:secret_token])
     end
   end
 end
