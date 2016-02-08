@@ -20,8 +20,8 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   s.add_development_dependency('test-unit', '>= 2.2.0')
-  s.add_dependency('activesupport', '>= 3.0')
-  s.add_dependency('actionpack', '>= 3.0')
+  s.add_dependency('activesupport', '> 3.0')
+  s.add_dependency('actionpack', '> 3.0')
 
   # note actionpack has requirement bug in 3.0.4 so tests don't run
   # https://rails.lighthouseapp.com/projects/8994/tickets/6393-action_dispatchhttprequestrb-missing-a-require
